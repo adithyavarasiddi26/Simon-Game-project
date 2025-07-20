@@ -7,14 +7,20 @@ userClickedPattern = [];
 var started = false;
 var level = 0;
 $(document).on("keydown",function(){
+    startGame();
+});
+
+$("body").on("click", function(){
+    startGame();
+});
+
+function startGame(){
     if(!started){
         nextSequence();
         started = true;
         $("h1").text("Level "+level);
     }
-
-
-});
+}
 
 function nextSequence(){
     var randomNumber = Math.floor(Math.random()*4);
