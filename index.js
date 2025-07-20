@@ -14,6 +14,10 @@ $("body").on("click", function(){
     startGame();
 });
 
+$("body").on("click touchstart", function () {
+  startGame();
+});
+
 function startGame(){
     if(!started){
         nextSequence();
