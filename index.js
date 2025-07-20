@@ -14,7 +14,7 @@ $("body").on("click", function(){
     startGame();
 });
 
-$(document).on("click touchstart", function () {
+$(document).on("touchstart", function () {
   startGame();
 });
 
