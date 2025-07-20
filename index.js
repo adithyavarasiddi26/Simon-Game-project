@@ -61,7 +61,9 @@ function startOver(){
     level = 0;
     gamePattern.length = 0;
     userClickedPattern.length = 0;
-    started = false;
+    setTimeout(function(){
+        started = false;
+    },1000);
 }
 
 function checkAnswer(currentLevel){
